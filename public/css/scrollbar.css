@@ -1,0 +1,28 @@
+/* 普遍滚动条 */
+  ::-webkit-scrollbar {
+    width: 4px !important;
+    height: 4px !important;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: white;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    background-image: -webkit-linear-gradient(45deg,
+     rgba(255, 255, 255, .2) 20%, transparent 20%, 
+     transparent 40%,rgba(255, 255, 255, .2) 40%, 
+     rgba(255, 255, 255, .2) 60%, transparent 60%, 
+     transparent 80%,rgba(255, 255, 255, .2) 80%, 
+   rgba(255, 255, 255, .2) 100%, transparent 100%, 
+    transparent);
+  }
+  
+  /* menu滚动条 */
+  .el-aside::-webkit-scrollbar-track {
+    background-color: #515A6E;
+  }
+  .el-aside::-webkit-scrollbar-thumb {
+    background-color: #434858;
+  }
+

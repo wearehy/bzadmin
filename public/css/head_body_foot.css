@@ -1,0 +1,147 @@
+
+/* *{font-size: 12px!important;} */
+body{font-size: 12px;}
+a{text-decoration:none}
+/* 主体边框 */
+.el-main{     /*el-main 主体*/
+    background: #f4f6f8;
+}
+@media screen and (max-width: 1500px) {
+    .el-main{
+        width: 1300px;
+    } 
+}
+/* dialog 从右侧弹出 */
+@keyframes dialog-fade-in {
+    0% {
+        transform: translate3d(100%,0 , 0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes dialog-fade-out {
+    0% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate3d( -100%,0, 0);
+        opacity: 0;
+    }
+}
+/* 搜索框左侧 */
+.search_head .el-input-group__prepend{
+    width: 50px;
+    text-align: center;
+}
+/* 边框 */
+.border-card{
+    background: #FFF;
+    border: 1px solid #DCDFE6;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04);
+    padding: 15px;
+}
+
+
+/* search_head  顶部搜索框*/
+
+.search_head .el-col{
+   margin-bottom: 10px;
+}
+.search_head .el-input-group__prepend{
+    /* width: 65px!important;
+    padding: 5px;
+    text-align: right; */
+}
+
+.search_head .title{
+    vertical-align: middle;
+    display: table-cell; 
+}
+
+/* el-table */
+.el-table *{
+    font-size: 12px;
+}
+.has-gutter  th{              /**table 标题除操作变灰**/
+    background: #F7F7F8;
+}
+.el-table th{                     
+    background: #F7F7F8;    /**table 标题操作变灰**/
+}
+
+.el-dialog{    /**弹窗居中**/
+  position: absolute;top: 50%;left: 50%;margin: 0 !important;transform: translate(-50%, -50%);
+} 
+/* 弹窗的input */
+.dInput{
+    
+}
+.dInput ul{
+    padding: 0 60px;
+}
+.dInput ul li{
+    padding: 10px 0;
+}
+.dInput ul li>span{
+    text-align: right;
+    display: inline-block;
+    width: 100px;
+}
+.dInput ul li span.textarea{
+    vertical-align:top;
+    padding-top: 5px;
+}
+.dInput .el-input{
+    width: calc(100% - 100px);
+}
+.dInput .el-textarea{
+    width: calc(100% - 100px);
+}
+
+.userGroup .el-radio-button--mini .el-radio-button__inner{
+    width: 80px!important;
+}
+
+/*******************************************************************/
+/* 返回 */
+.back{
+    height: 40px;
+}
+.back .bInfo{
+    float: left;
+}
+
+/*手写表单*/
+.ul_list{
+   width: 100%;
+   padding: 15px 20px;
+   margin: 20px 0;
+   background: white;
+   overflow: hidden; 
+   font-size: 16px;
+}
+.ul_list .title{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 900;
+    
+    border-bottom: 2px solid #DCDFE6;
+}
+.ul_list .el-row{
+    font-weight: 500;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #DCDFE6;
+}
+.ul_list .el-row:last-child{
+    margin-bottom: 20px;
+}
